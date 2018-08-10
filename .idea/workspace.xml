@@ -8,13 +8,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/roughTest.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/roughTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/addPubTest.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/addPubTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/webdriverInit.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/webdriverInit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../emsAutomation/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/publisherList.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/publisherList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/regesterPublisher.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/regesterPublisher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/roughTest.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/roughTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/addPubTest.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/addPubTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/webdriverInit.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/webdriverInit.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../emsAutomation/out/" />
     <ignored path="$PROJECT_DIR$/../emsAutomation/target/" />
@@ -75,8 +68,8 @@
       <file leaf-file-name="basePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#967#968#0" expanded="true" />
@@ -738,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533038698750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 2">
+      <created>1533887919422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533887919422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -812,7 +812,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="EmsAutomation framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="EmsAutomation framework" />
+    <MESSAGE value="commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1120,8 +1121,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#967#968#0" expanded="true" />
