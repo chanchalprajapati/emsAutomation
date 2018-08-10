@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 /**
  * Created by chanchal.k on 30-07-2018.
@@ -21,6 +22,7 @@ public class publisherList extends basePage {
     public void goToPublisherListPage(){
 
         driver.get(baseurl);
+        Reporter.log("Application Lauched successfully | ");
 
     }
     public void goToAddPublisherPage() throws InterruptedException {

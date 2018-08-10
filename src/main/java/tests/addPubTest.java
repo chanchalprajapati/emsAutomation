@@ -1,8 +1,17 @@
 package tests;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.Assertion;
+import org.testng.asserts.SoftAssert;
 import pages.regesterPublisher;
 import pages.publisherList;
+import uitilities.genric;
+
+import static org.testng.Assert.*;
+
 public class addPubTest extends webdriverInit {
 
 
@@ -23,15 +32,26 @@ public class addPubTest extends webdriverInit {
         //Go to Register Pub page
 
         homePage.goToAddPublisherPage();
+        Thread.sleep(6000);
 
         //Add New Pub
         regesterPublisher newUser = new regesterPublisher(driver,wait);
 
-        newUser.addNewPublisher("HB", "Autotest1", "AutotestdisName", "Aj", "kk", "autotest1@autotest.mm", "Header Bidder", "Test User", "Test User" );
+
+        newUser.addNewPublisher();
 
         //*************ASSERTIONS***********************
-       // Thread.sleep(500);
-        //loginPage.verifyLoginPassword(("E-posta adresiniz veya şifreniz hatalı"));
+        Thread.sleep(5000);
+        String ActualText = driver.findElement(By.xpath("//h4[contains(text(),'Configuration')]")).getText();
+        String ExpectedText = "Configuration";
+        SoftAssert softAssertion = new SoftAssert();
+
+        softAssertion.assertEquals(ExpectedText, ActualText);
+        Reporter.log("Application Lauched successfully | ");
+           System.out.print("done...............");
+
+
+
     }
 
 }

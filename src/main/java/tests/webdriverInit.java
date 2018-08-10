@@ -31,7 +31,7 @@ public class webdriverInit {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     }
 
-    @AfterTest
+   // @AfterTest
     public void teardown () {
         driver.quit();
     }

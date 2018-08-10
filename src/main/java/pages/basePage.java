@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.Keys;
 
@@ -40,5 +41,12 @@ public class basePage {
     public void enterButton (By elementLocation) {
         driver.findElement(elementLocation).sendKeys(Keys.RETURN);
     }
+
+    public void dropdown (By elementLocation, String option) {
+        Select dropdownSelect = new Select(driver.findElement(elementLocation));
+        dropdownSelect.selectByVisibleText(option);
+
+    }
+
 
 }
