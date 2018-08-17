@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
@@ -12,26 +13,71 @@ import java.util.concurrent.TimeUnit;
 
 public class webdriverInit {
 
-    public WebDriver driver;
-    public WebDriverWait wait;
+
+
+
+
+    WebDriver driver;
+    static String driverPath = "C:\\emsAutomation\\src\\main\\resources\\drivers\\";
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+    WebDriverWait wait;
+
+
+
+    public void setDriver(int browserType) {
+
+        switch (browserType) {
+            case 1 :
+                driver = initChromeDriver();
+                break;
+            case 2 :
+                driver = initFirefoxDriver();
+                break;
+            default:
+                System.out.println("browser : " + browserType
+                        + " is invalid, Launching Firefox as browser of choice..");
+                driver = initFirefoxDriver();
+        }
+    }
+
+    private static WebDriver initChromeDriver() {
+        System.out.println("Launching google chrome with new profile..");
+        System.setProperty("webdriver.chrome.driver", driverPath
+                + "chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+
+        return driver;
+    }
+
+    private static WebDriver initFirefoxDriver() {
+        System.out.println("Launching Firefox browser..");
+        System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+
+        return driver;
+
+
+    }
 
 
     @BeforeTest
         public void setup () {
-        System.setProperty("webdriver.chrome.driver", "C:\\emsAutomation\\src\\main\\resources\\drivers\\chromedriver.exe");
 
-        //Create a Chrome driver. All test and page classes use this driver.
-        driver = new ChromeDriver();
+        setDriver(1);
 
-        //Create a wait. All test and page classes use this wait.
-        wait = new WebDriverWait(driver,20);
 
-        //Maximize Window
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+
     }
 
-   // @AfterTest
+
+
+
+    @AfterTest
     public void teardown () {
         driver.quit();
     }
