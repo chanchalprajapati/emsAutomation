@@ -1,47 +1,69 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class roughTest {
-    public static void main(String[] args) {
 
-        System.out.print(getCurrentDateTime()+"test@media.net");
+
+    private WebDriver driver;
+    static String driverPath = "C:\\emsAutomation\\src\\main\\resources\\drivers\\";
+
+    public WebDriver getDriver() {
+    return driver;
     }
-        public static String  getCurrentDateTime ()
-        {
-            Date dNow = new Date();
-            SimpleDateFormat ft = new SimpleDateFormat("ddMMyyhhmmss");
-            String datetime = ft.format(dNow);
-            return datetime;
 
-
+    String appURL = "www.google.com";
+    public void setDriver(int browserType) {
+        //driver = this.driver;
+        switch (browserType) {
+            case 1 :
+                driver = initChromeDriver(appURL);
+                break;
+            case 2 :
+                driver = initFirefoxDriver(appURL);
+                break;
+            default:
+                System.out.println("browser : " + browserType
+                        + " is invalid, Launching Firefox as browser of choice..");
+                driver = initFirefoxDriver(appURL);
         }
     }
 
+    private static WebDriver initChromeDriver(String appURL) {
+        System.out.println("Launching google chrome with new profile..");
+        System.setProperty("webdriver.chrome.driver", driverPath
+                + "chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.navigate().to(appURL);
+        return driver;
+    }
 
-       /** String  addPubBtn = "//span[@class='ng-binding ng-scope'][contains(text(),'AAX')]";
-        roughTest dd = new roughTest();
-        dd.click(addPubBtn);
+    private static WebDriver initFirefoxDriver(String appURL) {
+        System.out.println("Launching Firefox browser..");
+        System.setProperty("webdriver.gecko.driver", driverPath + "geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.navigate().to(appURL);
+        return driver;
+
 
     }
-     public  void click(String xpathString) throws InterruptedException {
-       System.setProperty("webdriver.chrome.driver", "C:\\emsAutomation\\src\\main\\resources\\drivers\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.get("http://stage5.hb.reports.mn:83/publishermanagement/#/8PRL4E7N3/Header%20Bidder/add");
-        Thread.sleep(7000);
-        driver.findElement(By.xpath("//div[@placeholder='Select Partner']")).click();
-         WebElement s= driver.findElement(By.xpath(xpathString));
-         s.click();
-       // driver.findElement(By.xpath(xpathString)).click();**/
+
+    public static void main(String[] args) {
+roughTest mm = new roughTest();
+                mm.setDriver(2);
 
 
 
- //   }
 
-
-
+    }
+}
 
 
 
