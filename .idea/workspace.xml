@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cedf5391-ec18-4cac-a2e6-35b0104a1d95" name="Default" comment="Excell changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/resources/Screenshoots/testfailed01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/resources/testData/data.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/addEditPublisherRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/addEditPubRuleTest.java" />
+    <list default="true" id="cedf5391-ec18-4cac-a2e6-35b0104a1d95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/publisherList.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/publisherList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/regesterPublisher.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/regesterPublisher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/roughTest.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/pages/roughTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/addPubTest.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/addPubTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/webdriverInit.class" afterPath="$PROJECT_DIR$/../emsAutomation/target/classes/tests/webdriverInit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/.idea/misc.xml" afterPath="$PROJECT_DIR$/../emsAutomation/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../emsAutomation/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/emsAutomation.iml" afterPath="$PROJECT_DIR$/../emsAutomation/emsAutomation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/pom.xml" afterPath="$PROJECT_DIR$/../emsAutomation/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/basePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/publisherList.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/publisherList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/regesterPublisher.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/regesterPublisher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/roughTest.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/pages/roughTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/addPubTest.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/tests/addPubTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../emsAutomation/src/main/java/uitilities/genric.java" afterPath="$PROJECT_DIR$/../emsAutomation/src/main/java/uitilities/genric.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../emsAutomation/out/" />
     <ignored path="$PROJECT_DIR$/../emsAutomation/target/" />
@@ -85,8 +71,8 @@
       <file leaf-file-name="webdriverInit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../emsAutomation/src/main/java/tests/webdriverInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -923,7 +909,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536131549069</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Excell changes">
+      <created>1536131677921</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536131677921</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1506,8 +1499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../emsAutomation/src/main/java/tests/webdriverInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
