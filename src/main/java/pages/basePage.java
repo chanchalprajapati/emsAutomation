@@ -16,8 +16,8 @@ public class basePage {
     //Constructor
     public basePage (WebDriver driver, WebDriverWait wait){
 
-        this.driver = driver;
-        this.wait = wait;
+       this.driver = driver;
+       this.wait = wait;
 
 
     }

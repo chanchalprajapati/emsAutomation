@@ -6,23 +6,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import uitilities.genric;
+
+import java.io.IOException;
 
 /**
  * Created by chanchal.k on 30-07-2018.
  */
 public class publisherList extends basePage {
 
-    public publisherList(WebDriver driver, WebDriverWait wait){
+    public publisherList(WebDriver driver, WebDriverWait wait) throws IOException {
         super(driver,wait);
     }
-    String baseurl="http://stage.hb.reports.mn:83/publishermanagement/#/8PRL4E7N3/Header%20Bidder/list";
-    String addPubBtn = "//a[@class='btn btn-red btn-main btn-sm']";
+    String baseurl=genric.readExcel(0, 0, 1);
+    String addPubBtn = genric.readExcel(0,4,1);
    // WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-red btn-main btn-sm']")));
 
     public void goToPublisherListPage(){
 
         driver.get(baseurl);
-        Reporter.log("Application Lauched successfully | ");
+        Reporter.log("Application Lauched successfully | ", true);
 
     }
     public void goToAddPublisherPage() throws InterruptedException {

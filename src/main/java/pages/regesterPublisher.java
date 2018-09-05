@@ -7,32 +7,34 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import uitilities.genric;
 
+import java.io.IOException;
+
 public class regesterPublisher extends basePage {
 
-    public regesterPublisher(WebDriver driver, WebDriverWait wait){
+    public regesterPublisher(WebDriver driver, WebDriverWait wait) throws IOException {
 
         super(driver, wait);
 
     }
 
-    String selectPartner = "//span[@class='ng-binding ng-scope'][contains(text(),'AAX')]";
-    String Par = "//div[@placeholder='Select Partner']";
-    String companyName = "//li[3]//div[1]//input[1]";
+    String selectPartner = genric.readExcel(0,12,1);
+    String Par = genric.readExcel(0,13,1);
+    String companyName = genric.readExcel(0,14,1);
     //String companyName= "#bodyContainer > div.ng-scope > div:nth-child(3) > div > div > ul > li:nth-child(3) > div > input";
-    String dsplayName = "//ul[@class='formlist']//li[4]//div[1]//input[1]";
-    String FirstName = "//ul[@class='formlist']//li[5]//div[1]//input[1]";
-    String LastName = "//ul[@class='formlist']//li[6]//div[1]//input[1]";
-    String email = "//ul[@class='formlist']//li[7]//div[1]//input[1]";
-    String productType = "//div[@placeholder='Select Product Type']//div//input[@type='search']";
-    String pro = "//span[contains(text(),'In-App')]";
-    String AccManager = "//span[contains(text(),'Select Account Manager')]";
-    String Accmgtxt = "//input[@placeholder='Select Account Manager']";
-    String SalesContact = "//span[contains(text(),'Select Sales Contact')]";
-    String Salesc = "//input[@placeholder='Select Sales Contact']";
-    String SubmitBtn = "//a[@class='btn btn-red btn-main btn-sm']";
-    String CancelBtn = "//a[@class='btn btn-grey btn-main btn-sm']";
-    String testuser = "//span[@class='ng-binding ng-scope'][contains(text(),'Test User')]";
-    String testuser2 = "(//span[@class='ng-binding ng-scope'][contains(text(),'Test User')])[1]";
+    String dsplayName = genric.readExcel(0,15,1);
+    String FirstName = genric.readExcel(0,16,1);
+    String LastName = genric.readExcel(0,17,1);
+    String email = genric.readExcel(0,18,1);
+    String productType = genric.readExcel(0,19,1);
+    String pro = genric.readExcel(0,20,1);
+    String AccManager = genric.readExcel(0,21,1);
+    String Accmgtxt = genric.readExcel(0,22,1);
+    String SalesContact = genric.readExcel(0,23,1);
+    String Salesc = genric.readExcel(0,24,1);
+    String SubmitBtn = genric.readExcel(0,25,1);
+    String CancelBtn = genric.readExcel(0,26,1);
+    String testuser = genric.readExcel(0,27,1);
+    //String testuser2 = "(//span[@class='ng-binding ng-scope'][contains(text(),'Test User')])[1]";
 
 
     String compname = "Autotest1";
@@ -46,8 +48,8 @@ public class regesterPublisher extends basePage {
 
 
     public void addNewPublisher() throws InterruptedException {
-        System.out.print("enters in This page");
-        System.out.print("After Sleep");
+
+
         click(By.xpath(Par));
         click(By.xpath(selectPartner));
         writeText(By.xpath(companyName), compname);

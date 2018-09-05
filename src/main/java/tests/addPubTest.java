@@ -6,9 +6,12 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.SoftAssert;
+import pages.addEditPublisherRule;
 import pages.regesterPublisher;
 import pages.publisherList;
 import uitilities.genric;
+
+import java.io.IOException;
 
 import static org.testng.Assert.*;
 
@@ -16,7 +19,7 @@ public class addPubTest extends webdriverInit {
 
 
     @Test (priority = 0)
-    public void RegisterNewPublisher () throws InterruptedException {
+    public void RegisterNewPublisher () throws InterruptedException, IOException {
 
         //*************PAGE INSTANTIATIONS*************
         publisherList homePage = new publisherList(driver,wait);
@@ -41,7 +44,7 @@ public class addPubTest extends webdriverInit {
         newUser.addNewPublisher();
 
         //*************ASSERTIONS***********************
-        Thread.sleep(5000);
+        Thread.sleep(20000);
         String ActualText = driver.findElement(By.xpath("//h4[contains(text(),'Configuration')]")).getText();
         String ExpectedText = "Configuration";
         SoftAssert softAssertion = new SoftAssert();
@@ -50,8 +53,18 @@ public class addPubTest extends webdriverInit {
         Reporter.log("Application Lauched successfully | ");
            System.out.print("done...............");
 
+        addEditPublisherRule addpro = new addEditPublisherRule(driver, wait);
+        Thread.sleep(40000);
+
+        addpro.addeditpub();
+
+
+
+
 
 
     }
+
+
 
 }
